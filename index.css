@@ -107,6 +107,7 @@ nav {
     max-width: 1000px;
     position: relative;
     margin: auto;
+    display: none;
   }
   
   /* Hide the images by default */
