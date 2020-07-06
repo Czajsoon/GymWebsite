@@ -11,13 +11,26 @@ nav {
     min-height: 8vh;
     font-family: 'Lato';
     background-color: #FFBA1C;
+    border-bottom: 2px solid #333333;
+   
 }
 
-.logo{
-    color: #333333;
-    font-family: 'Lato',bold;
-    letter-spacing: 2px;
-    font-size: 20px;
+.logo img{
+    height: 100px;
+    width: 140px;
+}
+
+.top-image{
+  width: 100%; /* width of container */
+  overflow: hidden;
+  text-align: center;
+  position: static;
+ 
+}
+
+.top-image img{
+  max-width: 100%;
+  min-width: 100%;
 }
 
 .nav_links{
@@ -28,14 +41,19 @@ nav {
 
 .nav_links li{
     list-style: none;
-    
 }
+
 
 .nav_links a{
     color: #333333;
     font-family: 'Roboto Mono', monospace;
     text-decoration: none;
     font-size: 14px;
+    transition: color 0.5s ease;
+}
+
+.nav_links a:hover{
+  color: #f2f2f2;
 }
 
 .burger{
@@ -55,6 +73,7 @@ nav {
         overflow-x: hidden;
     }
     .nav_links{
+      padding-top: 50px;
         position: absolute;
         right: 0px;
         height: 92vh;
@@ -74,6 +93,10 @@ nav {
         display: block;
         cursor: pointer;
     }
+
+    .mySlides img{
+      margin-top: -100px;
+    }
 }
 
 .nav_active{
@@ -91,6 +114,7 @@ nav {
     }
 }
 
+
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px,6px);
 }
@@ -103,95 +127,37 @@ nav {
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    display: none;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
+.slideShow{
+    height: 300px;
     width: 100%;
-    text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+    overflow: hidden;
+}
+
+.slides{
+    width: 100%;
+    margin-top:-350px;
+}
+
+@keyframes slidesFadeOff{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0.5;
+    }
+}
+
+@keyframes slidesFadeOn{
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .slides{
+        margin-top:-150px;
+    }
+}
