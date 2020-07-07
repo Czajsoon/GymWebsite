@@ -12,7 +12,6 @@ nav {
     font-family: 'Lato';
     background-color: #FFBA1C;
     border-bottom: 2px solid #333333;
-   
 }
 
 .logo img{
@@ -131,9 +130,15 @@ nav {
     height: 300px;
     width: 100%;
     overflow: hidden;
+    position: static;
 }
 
-.slides{
+.slideShow img{
+    width: 100%;
+    position: static;
+}
+
+.slide{
     width: 100%;
     margin-top:-350px;
 }

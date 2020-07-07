@@ -1,24 +1,14 @@
-var i = 0;
-var images = [];
-var timer = 5000;
+var myIndex = 0;
+carousel();
 
-//images
-images[0]='images/img1.jpg';
-images[1]='images/img2.jpg';
-images[2]='images/img3.jpg';
-images[3]='images/img4.jpg';
-
-function changeImage(){
-    document.slide.src = images[i];
-    
-    if(i<images.length-1){
-        i++;
-    }
-    else{
-        i=0;
-    }
-
-    setTimeout("changeImage()",timer);
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("Slide");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000);    
 }
-
-window.onload = changeImage;
