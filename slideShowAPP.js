@@ -1,14 +1,10 @@
-var myIndex = 0;
-carousel();
+$("#slideshow > div:gt(0)").hide();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("Slide");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 5000);    
-}
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1500)
+    .next()
+    .fadeIn(1500)
+    .end()
+    .appendTo('#slideshow');
+},  5000);

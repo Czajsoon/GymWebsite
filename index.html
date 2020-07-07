@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
         <link href="index.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <title>STRONA GŁOWNA</title>
     </head>
 
@@ -45,12 +46,21 @@
                 <div class="line3"></div>
             </div>
        </nav>
-       <div class="slideShow" >
-        <img class="Slide w3-animate-fading" src="images/img1.jpg">
-        <img class="Slide w3-animate-fading" src="images/img2.jpg">
-        <img class="Slide w3-animate-fading" src="images/img3.jpg">
-        <img class="Slide w3-animate-fading" src="images/img4.jpg">
-      </div>
+       <div id="slideshow" class="slideShow">
+        <div class="picture">
+          <img src="images/img1.jpg">
+        </div>
+        <div class="picture">
+          <img src="images/img2.jpg">
+        </div>
+        <div class="picture">
+            <img src="images/img3.jpg">
+        </div>
+        <div class="picture">
+            <img src="images/img4.jpg">
+        </div>
+     </div>
+        
       <script src="slideShowAPP.js"></script>
       <script src="app.js"></script>
       
