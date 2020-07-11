@@ -202,7 +202,6 @@ nav {
     background-color: #FFBA1C;
     color: #333333;
     font-family: 'Lato';
-    margin-bottom: 40px;
 }
 
 .join-us a{
@@ -218,6 +217,7 @@ nav {
     text-align: center;
     font-size: 25px;
     color: #FFBA1C;
+    margin-top: 40px;
 }
 
 @media screen and (max-width:1024px){
@@ -234,7 +234,14 @@ nav {
     }
 }
 
-
+.serviceContent{
+    background: url("images/background-serv.png");
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position: center;
+    background-color: rgba(0,0,0,0.4);
+    padding-bottom: 80px;
+}
 
 .sevice-container{
     display: flex;
@@ -244,6 +251,7 @@ nav {
     padding-left: 100px;
     color: #333333;
     overflow: hidden;
+    align-items: center;
 }
 
 .sevice-container img{
@@ -251,13 +259,14 @@ nav {
     width: 100px;
     background-color: #FFBA1C;
     border-radius: 50%;
-    border-width: 10px;
+    border-width: 15px;
     border-style: solid;
     border-color: #FFBA1C;
     margin-right: 40px;
 }
 
 .sevice-container .ser-text{
+    letter-spacing: 2px;
 text-align: center;
 padding-top: 20px;
 padding-bottom: 20px;
@@ -273,6 +282,141 @@ padding-left: 20px;
 .ser-text h1{
     padding-bottom: 10px;
     font-family: 'Lato';
+}
+
+.knownUs{
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.knownUs .knownUsText{
+    font-size: 30px;
+    background-color: #FFBA1C;
+    color: #333333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 4px;
+}
+
+.trainersContainer{
+    width: 100%;
+    background-color: #FFBA1C;
+    overflow: hidden;
+}
+
+.persons{
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.persons1{
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+}
+.persons2{
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+}
+.persons3{
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+}
+.persons4{
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+}
+.persons5{
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+}
+.trainer{
+    background-color: #33333300;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-color: #33333300;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    transition: 0.8s ease-in-out;
+    margin: 15px;
+}
+
+.trainer:hover{
+    background-color: #333333;
+    border-color: #333333;
+}
+
+.trainer .numberTrainer{
+    display: inline-flex;
+    align-items: center;
+    width: 125px;
+    margin-top: 0;
+}
+
+.numberTrainer img{
+    height: 30px;
+    width: 30px;
+    background-color: #FFBA1C;
+    border-radius: 50%;
+}
+
+.numberTrainer p{
+    padding-left: 3px;
+    padding-top: 5.5px;
+    padding-bottom: 5.5px;
+    color: #f2f2f2;
+}
+.photoTrainer{
+    margin:0;
+}
+
+.photoTrainer img{
+    height: 125px;
+    width: 125px;
+    margin-bottom: 0;
+    border-radius: 50%;
+}
+
+.nameTrainer{
+    color: #333333;
+    background-color: #FFBA1C;
+    padding: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #FFBA1C;
+    border-width: 1px;
+    transition: 0.8s ease-in-out;
+    letter-spacing: 1.5px;
+}
+
+.nameTrainer a{
+    text-decoration: none;
+    color: #333333;
+}
+
+.nameTrainer:hover{
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
 }
 
 @media screen and (max-width:1024px){
@@ -291,7 +435,159 @@ padding-left: 20px;
         width: 100%;
     }
 }
+.galery{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
 
+.galery img{
+    width: 100%;
+    margin-top: -320px;
+}
+.textGalery{
+    content:"GALERIA ZDJĘĆ";
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,0.4);
+  color: #f2f2f2;
+  padding: 30px;
+  font-size: 30px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 5px;
+  border-color: rgba(0,0,0,0.01);
+  letter-spacing: 2px;
+  transition: 0.8s ease-in-out;
+}
+
+.textGalery a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.textGalery:hover{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgba(0,0,0,0.8);
+    border-color: rgba(0,0,0,0.1);
+}
+
+.bar{
+    background-color: #FFBA1C;
+    padding: 40px;
+    width: 100%;
+}
+
+.bar1 {
+    background-color: #FFBA1C;
+    padding: 10px;
+    width: 100%;
+}
+
+.bar1 p{
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.cennik{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.cennik img{
+    width: 100%;
+    margin-top:-150;
+}
+
+.textCen{
+    content:"GALERIA ZDJĘĆ";
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,0.4);
+  color: #f2f2f2;
+  padding: 30px;
+  font-size: 30px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 5px;
+  border-color: rgba(0,0,0,0.01);
+  letter-spacing: 2px;
+  transition: 0.8s ease-in-out;
+}
+
+.textCen:hover{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgba(0,0,0,0.8);
+    border-color: rgba(0,0,0,0.1);
+}
+
+.textCen a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.map{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.map iframe{
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+
+
+@media screen and (max-width:1024px){
+    .galery img{
+        margin-top: -220px;
+        
+    }
+    .cennik img{
+        margin-top: -150px;
+    }
+    .cennik{
+        height: 350px;
+    }
+    .galery{
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:760px){
+    .galery img{
+        margin-top: -150px;
+    }
+    .cennik img{
+        margin-top: -80px;
+    }
+    .cennik{
+        height: 175px;
+    }
+    .galery{
+        height: 175px;
+    }
+}
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -309,4 +605,26 @@ padding-left: 20px;
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #fdc43f;
+}
+
+
+.contactContainer{
+    width: 100%;
+    background-color: #f2f2f2;
+    text-align: center;
+    position: static;
+}
+
+.mainPageButton a{
+    margin: 30px;
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+    letter-spacing: 2px;
+    background-color: #FFBA1C;
+    padding: 100%;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #FFBA1C;
+    border-style: solid;
 }
